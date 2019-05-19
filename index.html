@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Contact management System</h1>
+<div class="cms-table-container" id="cmsTableContainer">
+    <div class="cms-table-row">
+        <div class="cms-table-column cms-name cms-header">Name</div>
+        <div class="cms-table-column cms-phone cms-header">Phone</div>
+        <div class="cms-table-column cms-address cms-header">Address</div>
+        <div class="cms-table-column cms-header cms-add-entry-column" id="cmsAddNewEntry">+</div>
+    </div>
+    <span id="tableBody"></span>
+</div>
+<div class="disable-modal" id="backdrop"></div>
+<div class="disable-modal" id="newPersonModal">
+    <h1>Add new Person</h1>
+    <label for="newPersonName">name</label>
+    <input type="text" id="newPersonName">
+
+    <label for="newPersonPhone">Phone</label>
+    <input type="text" id="newPersonPhone">
+
+    <label for="newPersonAddress">Address</label>
+    <input type="text" id="newPersonAddress">
+    <button id="newPersonCancelBtn">Cancel</button>
+    <button id="newPersonSubmitBtn">Submit</button>
+</div>
+
+<button id="clearBtn" style="position: absolute; bottom: 0; right: 100px;">CLear localstorage</button>
+
+
+<script src="script.js"></script>
+</body>
+</html>
